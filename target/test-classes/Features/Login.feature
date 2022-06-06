@@ -1,6 +1,6 @@
 Feature: Sauce Labs Demo Login Test cases
 
-  Scenario Outline: Login Page
+  Scenario Outline: Login Page with valid credentials
     Given the user launches the application
     When the user is on login page
     Then the user enters "<username>" in username field
@@ -14,7 +14,7 @@ Feature: Sauce Labs Demo Login Test cases
       | problem_user            | secret_sauce |
       | performance_glitch_user | secret_sauce |
 
-  Scenario Outline: Login Page
+  Scenario Outline: Login Page with Invalid Credentials
     Given the user launches the application
     When the user is on login page
     Then the user enters "<username>" in username field
